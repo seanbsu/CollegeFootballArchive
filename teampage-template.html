@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{TEAM_NAME}} Team Page</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">
+      <img src="images/fb-helmet.png" alt="Logo" class="helmet-logo">
+    </a>
+
+    <div class="teams-btn" id="nav-teams">
+      <button class="nav-btn"><a href="Teams.html">Teams</a></button>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Seasons
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        {{RECENT_SEASONS_OPTIONS}}
+      </div>
+    </div>
+
+    <div id="login-btn">
+      <button class="nav-btn"><a href="SignIn.html">Log In</a></button>
+    </div>
+
+    <div id="signUp-btn">
+      <button class="nav-btn"><a href="SignUp.html">Sign Up</a></button>
+    </div>
+  </div>
+</header>
+<body>
+<ul class="breadcrumb">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="Teams.html">Teams</a></li>
+  <li><a id="breadcrumb-team">{{TEAM_NAME}}</a></li>
+</ul>
+<div class="main-indiv-team">
+  <div class="center-content">
+    <div class="logo-name-star">
+      <img src="{{TEAM_LOGO_SRC}}">
+      <div class="name-nickname">
+        <h1>{{TEAM_NAME}}</h1>
+        <p>Nick Name: {{NICKNAME}}</p>
+      </div>
+      <label class="favorite-star">
+        <input type="checkbox">
+        <span>★</span>
+      </label>
+    </div>
+  </div>
+</div>
+
+<!-- here I have added 2 wrappers (inner and outer) -->
+<div class="outer-wrapper">
+  <div class="inner-wrapper">
+    <div class="dropdown-container">
+      <div class="season-dropdown">
+        <label for="season-select">Season:</label>
+        <select id="season-select">
+          {{SEASON_OPTIONS}}
+        </select>
+      </div>
+    </div>
+    <table class="team-opponent-table">
+      <tr>
+        <th>Opponent</th>
+        <th>W/L</th>
+        <th>Score</th>
+      </tr>
+      {{GAME_ROWS}}
+    </table>
+  </div>
+</div>
+</body>
+<footer>
+  <div class="footer-logo">
+    <a href="index.html">
+      <img src="images/fb-helmet.png" alt="Logo" class="helmet-logo">
+    </a>
+  </div>
+  <div class="footer-links">
+    <a href="Contact.html">Contact Us</a>
+    <a href="Terms%20of%20Use.html">Terms of Use</a>
+  </div>
+</footer>
+</html>

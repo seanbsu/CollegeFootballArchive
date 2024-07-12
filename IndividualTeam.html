@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boise State Team Page</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div class="topnav" id="myTopnav">
+        <a href = index.html>
+            <img src="images/fb-helmet.png" alt="Logo" class = "helmet-logo">
+        </a>
+
+        <div class="teams-btn" id="nav-teams">
+            <button class="nav-btn" ><a href="Teams.html">Teams</a></button>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Seasons
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Seasons.html">2022</a>
+                <a href="www.collegefbarchive.com/seasons/2021">2021</a>
+                <a href="www.collegefbarchive.com/seasons/2020">2020</a>
+            </div>
+        </div>
+
+        <div id="login-btn">
+            <button class = "nav-btn" ><a href="SignIn.html">Log In</a></button>
+        </div>
+
+        <div id="signUp-btn">
+            <button class="nav-btn" ><a href ="SignUp.html">Sign Up</a></button>
+        </div>
+    </div>
+</header>
+<body>
+<div class="body-container">
+<ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Teams.html">Teams</a></li>
+    <li><a id="breadcrumb-team">Boise State</a></li>
+</ul>
+<div class="main-indiv-team">
+    <div class="center-content">
+        <div class="logo-name-star">
+            <img src="/images/sportsJSON/collegeFootball/logos/boiseState.png">
+            <div class="name-nickname">
+                <h1>Boise State</h1>
+                <p>Nick Name: Broncos</p>
+            </div>
+            <label class="favorite-star">
+                <input type="checkbox">
+                <span>★</span>
+            </label>
+        </div>
+    </div>
+</div>
+
+
+<div class="outer-wrapper">
+    <div class="inner-wrapper">
+        <div class="dropdown-container">
+            <div class="season-dropdown">
+                <label for="season-select">Season:</label>
+                <select id="season-select">
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+        </div>
+        <table class="team-opponent-table">
+            <tr>
+                <th>Opponent</th>
+                <th>W/L</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td><img class="opponent-logo" href="www.collegefbarchive.com/teams/Oregon-State" src="/images/sportsJSON/collegeFootball/logos/oregonState.png" alt="Oregon-State-logo">Oregon State</td>
+                <td>L</td>
+                <td>17 - 34</td>
+            </tr>
+            <tr>
+                <td><img class="opponent-logo" href="www.collegefbarchive.com/teams/New-Mexico" src="/images/sportsJSON/collegeFootball/logos/newMexico.png" alt="New-Mexico-logo">New Mexico</td>
+                <td>W</td>
+                <td>31 - 14</td>
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+</body>
+<footer>
+    <div class="footer-logo">
+        <a href = index.html>
+            <img src="images/fb-helmet.png" alt="Logo" class="helmet-logo">
+        </a>
+    </div>
+    <div class="footer-links">
+        <a href="Contact.html">Contact Us</a>
+        <a href="Terms%20of%20Use.html">Terms of Use</a>
+    </div>
+
+</footer>
+
+</html>

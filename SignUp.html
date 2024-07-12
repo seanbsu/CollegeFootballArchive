@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign Up</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div class="topnav" id="myTopnav">
+        <a href = index.html>
+            <img src="images/fb-helmet.png" alt="Logo" class = "helmet-logo">
+        </a>
+        <div class="teams-btn" id="nav-teams">
+            <button class="nav-btn" ><a href="Teams.html">Teams</a></button>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Seasons
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Seasons.html">2022</a>
+                <a href="www.collegefbarchive.com/seasons/2021">2021</a>
+                <a href="www.collegefbarchive.com/seasons/2020">2020</a>
+            </div>
+        </div>
+
+        <div id="login-btn">
+            <button class = "nav-btn" ><a href="SignIn.html">Log In</a></button>
+        </div>
+
+        <div id="signUp-btn">
+            <button class="nav-btn" ><a href ="SignUp.html">Sign Up</a></button>
+
+        </div>
+    </div>
+</header>
+<body>
+<div class="center-container">
+    <div class="popup-signup-init">
+        <div id="signup-title-init">
+            <h2>Sign Up for CollegeFB-Archive</h2>
+            <form id="signUp-init">
+                <p>Email</p>
+                <input type="text" name="username" id="email" class="entry" placeholder="Email">
+                <p>Full Name</p>
+                <input type="text" name="fullname" id="fullname" class="entry" placeholder="Full Name">
+                <p>Password</p>
+                <input type="password" name="password" id="password" class="entry" placeholder="Password">
+                <p>Confirm Password</p>
+                <input type="password" name="password-confirm" id="password-confirm" class="entry" placeholder="Confirm Password">
+                <br>
+                <div class="terms-container">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to the </label><a id="terms-link" href="Terms%20of%20Use.html">Terms of Service</a>
+                </div>
+                <input type="submit" value="Continue" id="signup-footer-init">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="center-container">
+    <div class="popup-signup">
+        <div id="email-sent-title-signup">
+            <h2>Sign Up for CollegeFB-Archive</h2>
+        </div>
+        <div id="email-sent-body-signup">
+            <h1>Check Your Email</h1><br>
+            <p>We sent an account verification email to *xyz@abc.com*.<br><br>
+                Please click the link in the email in order to verify your account and continue.<br><br>
+                You can close this page now.</p>
+        </div>
+        <div id="email-sent-footer-signup">
+            <p>Did not get the email? </p><a href="#">[Click here]</a>
+        </div>
+    </div>
+</div>
+
+<div class="center-container">
+<div class="popup-signup-resend">
+    <div id="email-resend-title-signup">
+        <h2>Resend Verification Email</h2>
+    </div>
+    <form>
+        <div id="email-resend-body-signup">
+            <p>Did not receive a verification email? <br> Let's try sending it again!<br><br>
+              </p>
+            <label for="email">Email:</label><br>
+            <input class="entry" type="email" id="email-resend" name="email" required>
+
+        </div>
+        <div id="email-resend-footer-signup">
+            <a href="#">Go Back</a>
+            <input id="resend-email-submit" type="submit" value="Resend">
+        </div>
+    </form>
+</div>
+</div>
+
+<div class="center-container">
+    <div class="popup-email-resent">
+        <div id="email-resent-title-signup">
+            <h2>Sign Up for CollegeFB-Archive</h2>
+        </div>
+        <div id="email-resent-body-signup">
+            <p>Check your email at *xyz@abc.com*.<br><br>
+                Make sure your check your SPAM folder as well!<br><br>
+                If you still don't receive the email, please email us at [support@#####.com].</p>
+        </div>
+        <div id="email-resent-footer-signup">
+            <input id="resent-email-close" type="submit" value="Close">
+        </div>
+    </div>
+</div>
+
+<div class="center-container">
+<div class="sign-in-form-signup">
+    <div id="signup-login-title">
+        <h2>Please Log In to Complete Email Verification</h2>
+    </div>
+    <form>
+        <div id="signup-login-body">
+            <label for="email" require>Email:</label><br>
+            <input class="entry" type="email" id="email-login-signup" name="email" required>
+            <label for="password" require>Password:</label><br>
+            <input class="entry" type="email" id="password-login-signup" name="email" required>
+        </div>
+        <div id="login-error-msg-signup">
+            <p id="login-error-msg">*Invalid username <span id="error-msg-second-line">and/or password</span></p>
+        </div>
+        <div id="signup-login-footer">
+            <input id="" type="submit" value="Log In">
+        </div>
+    </form>
+</div>
+</div>
+
+</body>
+<footer>
+    <div class="footer-logo">
+        <a href = index.html>
+            <img src="images/fb-helmet.png" alt="Logo" class="helmet-logo">
+        </a>
+    </div>
+    <div class="footer-links">
+        <a href="Contact.html">Contact Us</a>
+        <a href="Terms%20of%20Use.html">Terms of Use</a>
+    </div>
+</footer>
+</html>

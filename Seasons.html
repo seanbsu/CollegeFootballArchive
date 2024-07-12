@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boise State Team Page</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div class="topnav" id="myTopnav">
+        <a href = index.html>
+            <img src="images/fb-helmet.png" alt="Logo" class = "helmet-logo">
+        </a>
+
+        <div class="teams-btn" id="nav-teams">
+            <button class="nav-btn" ><a href="Teams.html">Teams</a></button>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Seasons
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="Seasons.html">2022</a>
+                <a href="www.collegefbarchive.com/seasons/2021">2021</a>
+                <a href="www.collegefbarchive.com/seasons/2020">2020</a>
+            </div>
+        </div>
+
+        <div id="login-btn">
+            <button class = "nav-btn" ><a href="SignIn.html">Log In</a></button>
+        </div>
+
+        <div id="signUp-btn">
+            <button class="nav-btn" ><a href ="SignUp.html">Sign Up</a></button>
+        </div>
+    </div>
+</header>
+<body>
+<div class = body-container>
+<ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Seasons.html">Seasons</a></li>
+    <li><a id="breadcrumb-season">2022</a></li>
+    <li><a id="breadcrumb-week">Week 1</a></li>
+</ul>
+<div class="main-indiv-team">
+    <h1>2022 Season</h1>
+</div>
+
+
+<div class="outer-wrapper">
+    <div class="inner-wrapper">
+        <div class="dropdown-container">
+            <div class="season-dropdown">
+                <label for="season-select">Season:</label>
+                <select id="season-select">
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                </select>
+            </div>
+            <div class="season-dropdown">
+                <label for="week-select">Week:</label>
+                <select id="week-select">
+                    <option value="Week 1">Week 1</option>
+                    <option value="Week 2">Week 2</option>
+                    <option value="Week 3">Week 3</option>
+                    <option value="...">...</option>
+                    <option value="Bowl Week 1">Bowl Week 1</option>
+                </select>
+            </div>
+        </div>
+        <table class="team-opponent-table">
+            <tr>
+                <th>Teams</th>
+                <th>Score</th>
+                <th>Teams</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td><div class="team1" >
+                    <img class="opponent-logo" href="www.collegefbarchive.com/teams/Boise-State"
+                                         src="/images/sportsJSON/collegeFootball/logos/boiseState.png" alt="Boise-State-logo">Boise State
+                        </div>
+                    <div class="team2" >
+                        <img class="opponent-logo" href="www.collegefbarchive.com/teams/Oregon-State"
+                             src="/images/sportsJSON/collegeFootball/logos/oregonState.png" alt="Oregon-State-logo">Oregon State
+                   </div>
+                </td>
+                <td class="scorecard">
+                    <div class="score1"> 17</div>
+                    <div class="score2">34</div>
+                </td>
+                <td><div class="team1" ><img class="opponent-logo" href="www.collegefbarchive.com/teams/Georgia-Tech"
+                                                       src="/images/sportsJSON/collegeFootball/logos/georgiaTech.png" alt="Georgia Tech-logo">Georgia Tech
+                </div>
+                    <div class="team2" >
+                        <img class="opponent-logo" href="www.collegefbarchive.com/teams/Clemson"
+                             src="/images/sportsJSON/collegeFootball/logos/clemson.png" alt="Clemson-logo">Clemson
+                    </div>
+                </td>
+                <td class = "scorecard">
+                    <div class="score1"> 10</div>
+                    <div class="score2">41</div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="team1">
+                        <img class="opponent-logo" href="www.collegefbarchive.com/teams/LSU"
+                             src="/images/sportsJSON/collegeFootball/logos/lsu.png" alt="LSU-logo">LSU
+                    </div>
+                    <div class="team2">
+                        <img class="opponent-logo" href="www.collegefbarchive.com/teams/Florida-State"
+                             src="/images/sportsJSON/collegeFootball/logos/floridaState.png" alt="Florida State-logo">Florida State
+                    </div>
+                </td>
+                <td class="scorecard">
+                    <div class="score1">23</div>
+                    <div class="score2">24</div>
+                </td>
+                <td>
+                    <div class="team1">
+                        <img class="opponent-logo" href="www.collegefbarchive.com/teams/Buffalo"
+                             src="/images/sportsJSON/collegeFootball/logos/buffalo.png" alt="Buffalo-logo">Buffalo
+                    </div>
+                    <div class="team2">
+                        <img class="opponent-logo" href="www.collegefbarchive.com/teams/Maryland"
+                             src="/images/sportsJSON/collegeFootball/logos/maryland.png" alt="Maryland-logo">Maryland
+                    </div>
+                </td>
+                <td class="scorecard">
+                    <div class="score1">10</div>
+                    <div class="score2">31</div>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+</div>
+</div>
+</body>
+<footer>
+    <div class="footer-logo">
+        <a href = index.html>
+            <img src="images/fb-helmet.png" alt="Logo" class="helmet-logo">
+        </a>
+    </div>
+    <div class="footer-links">
+        <a href="Contact.html">Contact Us</a>
+        <a href="Terms%20of%20Use.html">Terms of Use</a>
+    </div>
+</footer>
+
+</html>
